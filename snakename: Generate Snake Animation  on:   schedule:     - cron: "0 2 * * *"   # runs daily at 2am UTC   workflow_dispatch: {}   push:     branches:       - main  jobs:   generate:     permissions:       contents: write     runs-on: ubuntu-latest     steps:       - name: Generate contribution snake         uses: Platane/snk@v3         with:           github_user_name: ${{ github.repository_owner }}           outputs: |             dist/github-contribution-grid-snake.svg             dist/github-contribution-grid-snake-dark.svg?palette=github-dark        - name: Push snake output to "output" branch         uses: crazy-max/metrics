@@ -1,0 +1,21 @@
+name: Generate Isometric Metrics
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # runs daily at 3am UTC
+  workflow_dispatch: {}
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          config_timezone: Asia/Kolkata
