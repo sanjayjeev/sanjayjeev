@@ -1,28 +1,3 @@
-#!/usr/bin/env bash
-# ============================================================
-#  Sanjay A — GitHub Profile Setup (all-in-one)
-# ------------------------------------------------------------
-#  1. Edit GITHUB_USERNAME below (one line).
-#  2. Run:  bash setup_profile.sh
-#  3. It creates a ready-to-push folder called profile-repo/
-#     containing README.md + both GitHub Actions workflows,
-#     with your username already filled in everywhere.
-#  4. cd profile-repo, git init, and push to a repo named
-#     exactly your username (e.g. sanjay-a/sanjay-a).
-# ============================================================
-
-set -e
-
-GITHUB_USERNAME="YOUR_GITHUB_USERNAME"   # <-- change this one line
-
-OUT="profile-repo"
-rm -rf "$OUT"
-mkdir -p "$OUT/.github/workflows"
-
-# ---------------------------------------------------------
-# README.md
-# ---------------------------------------------------------
-cat > "$OUT/README.md" << 'EOF'
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=250&section=header&text=SANJAY%20A&fontSize=70&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=Computer%20Science%20Engineering%20%26%20Cyber%20Security&descAlignY=55&descSize=22&descAlign=50" width="100%"/>
@@ -31,8 +6,8 @@ cat > "$OUT/README.md" << 'EOF'
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=__USERNAME__&label=PROFILE+VIEWS&color=8a2be2&style=for-the-badge"/>
-<img src="https://img.shields.io/github/followers/__USERNAME__?label=FOLLOWERS&style=for-the-badge&color=8a2be2"/>
+<img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&label=PROFILE+VIEWS&color=8a2be2&style=for-the-badge"/>
+<img src="https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?label=FOLLOWERS&style=for-the-badge&color=8a2be2"/>
 <img src="https://img.shields.io/badge/OPEN%20TO-Software%20%7C%20Cybersecurity%20%7C%20IT-1a1a2e?style=for-the-badge&color=302b63"/>
 
 <br/><br/>
@@ -46,9 +21,13 @@ cat > "$OUT/README.md" << 'EOF'
 
 <br/>
 
+<!-- ============== ANIMATED CONTRIBUTION SNAKE ============== -->
 <div align="center">
-<img src="https://raw.githubusercontent.com/__USERNAME__/__USERNAME__/output/github-contribution-grid-snake-dark.svg" width="100%"/>
-<sub>⚙️ Auto-generated nightly by the included GitHub Actions workflow.</sub>
+
+<img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+
+<sub>⚙️ Auto-generated nightly by GitHub Actions — see <code>.github/workflows/snake.yml</code> below to enable this on your own profile.</sub>
+
 </div>
 
 <br/>
@@ -104,7 +83,9 @@ class Sanjay:
 ## 🧠 Skill Matrix
 
 <div align="center">
+
 <img src="https://skillicons.dev/icons?i=python,c,js,kotlin,html,css,flask,nodejs,mysql,firebase,androidstudio,linux,kali,git,github,vscode&theme=dark&perline=8"/>
+
 </div>
 
 <br/>
@@ -210,22 +191,25 @@ Auth, databases, payment integration concepts, admin dashboards, and APIs.
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=__USERNAME__&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true"/>
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=__USERNAME__&layout=compact&theme=radical&hide_border=true"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=radical&hide_border=true"/>
 
-<img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=__USERNAME__&theme=radical&hide_border=true"/>
+<img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=radical&hide_border=true"/>
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=__USERNAME__&theme=redical&hide_border=true"/>
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&theme=redical&hide_border=true"/>
 
 </div>
 
 <details>
-<summary align="center"><b>🧊 3D Isometric Contribution Metrics</b></summary>
+<summary align="center"><b>🧊 3D Isometric Contribution Metrics (advanced — via lowlighter/metrics)</b></summary>
 <br/>
+
 <div align="center">
-<img src="https://raw.githubusercontent.com/__USERNAME__/__USERNAME__/main/github-metrics.svg" width="100%"/>
+<img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/main/github-metrics.svg" width="100%"/>
 </div>
-Rendered by the included <code>metrics.yml</code> Action (lowlighter/metrics).
+
+This isometric calendar renders via the open-source **lowlighter/metrics** GitHub Action — setup instructions are below.
+
 </details>
 
 <br/>
@@ -233,7 +217,7 @@ Rendered by the included <code>metrics.yml</code> Action (lowlighter/metrics).
 ## 🏆 Trophy Case
 
 <div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=__USERNAME__&theme=radical&no-frame=true&no-bg=false&row=1&column=7"/>
+<img src="https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=radical&no-frame=true&no-bg=false&row=1&column=7"/>
 </div>
 
 <br/>
@@ -275,90 +259,9 @@ Rendered by the included <code>metrics.yml</code> Action (lowlighter/metrics).
 <br/>
 
 <div align="center">
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=150&section=footer"/>
 
 **"Turning code into real-world impact — one project at a time."**
+
 </div>
-EOF
-
-# fill in the username placeholder
-sed -i "s/__USERNAME__/${GITHUB_USERNAME}/g" "$OUT/README.md"
-
-# ---------------------------------------------------------
-# .github/workflows/snake.yml
-# ---------------------------------------------------------
-cat > "$OUT/.github/workflows/snake.yml" << 'EOF'
-name: Generate Snake Animation
-
-on:
-  schedule:
-    - cron: "0 2 * * *"
-  workflow_dispatch: {}
-  push:
-    branches:
-      - main
-
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    steps:
-      - name: Generate contribution snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - name: Push snake output to "output" branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-EOF
-
-# ---------------------------------------------------------
-# .github/workflows/metrics.yml
-# ---------------------------------------------------------
-cat > "$OUT/.github/workflows/metrics.yml" << 'EOF'
-name: Generate Isometric Metrics
-
-on:
-  schedule:
-    - cron: "0 3 * * *"
-  workflow_dispatch: {}
-
-jobs:
-  metrics:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: github-metrics.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-          config_timezone: Asia/Kolkata
-EOF
-
-echo "✅ Done. Created ./${OUT}/ with:"
-echo "   README.md"
-echo "   .github/workflows/snake.yml"
-echo "   .github/workflows/metrics.yml"
-echo ""
-echo "Next steps:"
-echo "  cd ${OUT}"
-echo "  git init && git add . && git commit -m 'Init profile'"
-echo "  git branch -M main"
-echo "  git remote add origin https://github.com/${GITHUB_USERNAME}/${GITHUB_USERNAME}.git"
-echo "  git push -u origin main"
-echo ""
-echo "  Then add a repo secret METRICS_TOKEN (a PAT with repo + read:user scopes)"
-echo "  for the isometric-metrics workflow to work."
